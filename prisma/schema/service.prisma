@@ -22,3 +22,5 @@ model Service {
   @@index([price])
   @@map("services")
 }
+
+
