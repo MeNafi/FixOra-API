@@ -1,4 +1,3 @@
-// OpenAPI 3.0 specification for the FixItNow API.
 // Served as JSON at GET /api-docs.json and rendered by Swagger UI at GET /api-docs
 
 const bearerAuth = [{ bearerAuth: [] }];
