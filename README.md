@@ -1,45 +1,31 @@
-# FixItNow 🔧
+# FixOra-API 🔧
 
-**"Your Trusted Home Service Platform"**
+> **Your Trusted Home Service Platform**
 
-FixItNow is a backend API for a home services marketplace. Customers browse services (plumbing, electrical, cleaning, painting and more), book qualified technicians, pay through Stripe, and leave reviews. Technicians manage their service profiles, availability and jobs. Admins oversee users, bookings and service categories.
+A backend API for a home services marketplace where customers can browse services, book technicians, make Stripe payments, and leave reviews.
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=nodejs,typescript,express,prisma,postgres,jwt,stripe,postman,swagger" />
+</p>
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Runtime | Node.js (ESM) + TypeScript |
-| Framework | Express 5 |
-| ORM | Prisma 7 (multi-file schema) with `@prisma/adapter-pg` |
-| Database | PostgreSQL |
-| Auth | JWT (access + refresh tokens), httpOnly cookies, bcrypt hashing |
-| Validation | Zod |
-| Payments | **Stripe** (Checkout Session + verified webhooks) |
-| Docs | OpenAPI 3.0 / Swagger UI + Postman collection |
+| Runtime | Framework | Database | ORM | Auth | Payment | Docs |
+|---|---|---|---|---|---|---|
+| Node.js | Express 5 | PostgreSQL | Prisma 7 | JWT | Stripe | Swagger + Postman |
 
 ---
 
-## 🔐 Admin Credentials
+## 📚 API Documentation
 
-| Field | Value |
-|---|---|
-| Email | `admin@fixitnow.com` |
-| Password | `Admin@1234` |
+> 📮 **Postman API Docs**  
+> Complete API endpoints, requests, responses & authentication.
 
-The admin account is created by the seed script (`npm run seed`) from the `ADMIN_EMAIL` / `ADMIN_PASSWORD` values in your `.env`.
-
-**Other seeded accounts (for testing):**
-
-| Role | Email | Password |
-|---|---|---|
-| Technician | `karim.tech@fixitnow.com` | `Tech@1234` |
-| Technician | `nasrin.tech@fixitnow.com` | `Tech@1234` |
-| Customer | `customer@fixitnow.com` | `Customer@1234` |
+**[View Postman Documentation →](https://documenter.getpostman.com/view/54899242/2sBYB1PoQQ)**
 
 ---
-
 ## 🚀 Getting Started
 
 ```bash
