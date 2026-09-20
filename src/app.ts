@@ -71,4 +71,3 @@ app.use(notFound)
 app.use(globalErrorHandler)
 
 export default app;
-
