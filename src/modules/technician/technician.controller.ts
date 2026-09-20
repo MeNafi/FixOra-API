@@ -5,7 +5,7 @@ import { sendResponse } from "../../utils/sendResponse";
 import { technicianService } from "./technician.service";
 import { BookingStatus } from "../../../generated/prisma/enums";
 
-// GET /api/technicians
+// GET /api/technicians 
 const getAllTechnicians = catchAsync(async (req: Request, res: Response, next: NextFunction) => {
   const result = await technicianService.getAllTechnicians(req.query);
 
