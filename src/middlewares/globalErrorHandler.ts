@@ -10,7 +10,7 @@ type TErrorDetail = {
   message: string;
 };
 
-/**
+/** 
  * Single place where every error in the app becomes JSON.
  * Response shape is always:
  * { success: false, statusCode, message, errorDetails }
