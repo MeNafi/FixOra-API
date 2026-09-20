@@ -31,3 +31,4 @@ model Booking {
   @@index([status])
   @@map("bookings")
 }
+
