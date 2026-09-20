@@ -13,3 +13,4 @@ model Category {
 
   @@map("categories")
 }
+
