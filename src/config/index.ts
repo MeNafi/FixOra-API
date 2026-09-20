@@ -17,10 +17,6 @@ export default {
   jwt_access_expires_in: process.env.JWT_ACCESS_EXPIRES_IN!,
   jwt_refresh_expires_in: process.env.JWT_REFRESH_EXPIRES_IN!,
 
-  admin_name: process.env.ADMIN_NAME || "FixItNow Admin",
-  admin_email: process.env.ADMIN_EMAIL || "admin@fixitnow.com",
-  admin_password: process.env.ADMIN_PASSWORD || "Admin@1234",
-
   stripe_secret_key: process.env.STRIPE_SECRET_KEY!,
   stripe_webhook_secret: process.env.STRIPE_WEBHOOK_SECRET!,
   stripe_currency: process.env.STRIPE_CURRENCY || "usd",
@@ -30,3 +26,4 @@ export default {
   ssl_is_live: process.env.SSL_IS_LIVE === "true",
   ssl_currency: process.env.SSL_CURRENCY || "BDT",
 };
+
