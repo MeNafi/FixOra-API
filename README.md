@@ -1,29 +1,52 @@
+<div align="center">
+
 # FixOra-API 🔧
 
-> **Your Trusted Home Service Platform**
+**Your Trusted Home Service Platform**
 
-A backend API for a home services marketplace where customers can browse services, book technicians, make Stripe payments, and leave reviews.
+A modern backend RESTful API powering a home services marketplace where customers can seamlessly browse services, book skilled technicians, process secure Stripe payments, and post verified reviews.
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=nodejs,typescript,express,prisma,postgres,jwt,stripe,postman,swagger" />
-</p>
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![Stripe](https://img.shields.io/badge/Stripe-6366F1?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)
+[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
+[![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io/)
+
+</div>
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack Architecture
 
-| Runtime | Framework | Database | ORM | Auth | Payment | Docs |
-|---|---|---|---|---|---|---|
-| Node.js | Express 5 | PostgreSQL | Prisma 7 | JWT | Stripe | Swagger + Postman |
+| Layer | Technology | Details |
+| :--- | :--- | :--- |
+| **Runtime Environment** | **Node.js** | JavaScript V8 Runtime Engine |
+| **Language** | **TypeScript** | Type-safe Backend Architecture |
+| **Web Framework** | **Express 5** | High-performance Routing & Middleware |
+| **Database** | **PostgreSQL** | Relational Database Management System |
+| **ORM** | **Prisma 7** | Modern Type-safe Query Builder |
+| **Authentication** | **JWT & Zod v4** | Token-based Auth & Schema Validation |
+| **Payments** | **Stripe API** | Secure Payment Gateway Integration |
+| **API Documentation**| **Swagger & Postman** | Interactive API Specs & Testing Collections |
 
 ---
 
 ## 📚 API Documentation
 
-> 📮 **Postman API Docs**  
-> Complete API endpoints, requests, responses & authentication.
+> 📮 **Interactive Postman Documentation**  
+> Access full endpoint details, request payloads, response schemas, and authentication flows.
 
-**[View Postman Documentation →](https://documenter.getpostman.com/view/54899242/2sBYB1PoQQ)**
+<p align="left">
+  <a href="https://documenter.getpostman.com/view/54899242/2sBYB1PoQQ" target="_blank">
+    <img src="https://run.pstmn.io/button.svg" alt="Run In Postman" width="128" height="32">
+  </a>
+</p>
+
+👉 **[Explore Full API Documentation →](https://documenter.getpostman.com/view/54899242/2sBYB1PoQQ)**
 
 ---
 ## 🚀 Getting Started
