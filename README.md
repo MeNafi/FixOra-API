@@ -40,7 +40,7 @@ A modern backend RESTful API powering a home services marketplace where customer
 
 > 📮 **Interactive Postman Documentation**  
 > Access full endpoint details, request payloads, response schemas, and authentication flows.
-
+>
 <p align="left">
   <a href="https://documenter.getpostman.com/view/54899242/2sBYB1PoQQ" target="_blank">
     <img src="https://run.pstmn.io/button.svg" alt="Run In Postman" width="128" height="32">
@@ -48,8 +48,21 @@ A modern backend RESTful API powering a home services marketplace where customer
 </p>
 
 👉 **[Explore Full API Documentation →](https://documenter.getpostman.com/view/54899242/2sBYB1PoQQ)**
+>
 
 ---
+
+## 🚀 Live API
+
+> ▲ **Deployed on Vercel**  
+> Access the live FixOra REST API deployed and hosted on Vercel.
+
+> [![Live API](https://img.shields.io/badge/Live%20API-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://fixora-api-chi.vercel.app/)
+
+👉 [**Explore Live API →**](https://fixora-api-chi.vercel.app/)
+
+---
+
 ## 🚀 Getting Started
 
 ```bash
