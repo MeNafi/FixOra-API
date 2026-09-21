@@ -1,15 +1,17 @@
 {
-  "name": "fixitnow-backend",
+  "name": "FixOra-API",
   "version": "1.0.0",
-  "description": "FixItNow - Home Service Marketplace Backend API",
+  "description": "FixOra-API - Home Service Marketplace Backend API",
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "server.ts",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
+    "build": "prisma generate && tsup",
+    "vercel-build": "prisma generate && tsc",
+    "postinstall": "npx prisma generate",
+    "start": "node api/index.js",
     "seed": "tsx prisma/seed.ts",
     "migrate": "prisma migrate dev",
     "generate": "prisma generate",
@@ -45,6 +47,7 @@
     "pg": "^8.22.0",
     "stripe": "^22.6.1",
     "swagger-ui-express": "^5.0.1",
+    "tsup": "^8.5.1",
     "zod": "^4.1.5"
   }
 }

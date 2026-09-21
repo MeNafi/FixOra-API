@@ -6,8 +6,8 @@ These accounts are created by the seed script: `npm run seed`
 
 | Field | Value |
 |---|---|
-| Email | `admin@fixitnow.com` |
-| Password | `Admin@1234` |
+| Email | ` admin@example.com` |
+| Password | `password123` |
 
 > The admin is created from `ADMIN_EMAIL` and `ADMIN_PASSWORD` in your `.env` file.
 > The public `/api/auth/register` endpoint can only create `CUSTOMER` or `TECHNICIAN` accounts —

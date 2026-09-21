@@ -40,7 +40,7 @@ export const globalErrorHandler = (
     statusCode = httpStatus.BAD_REQUEST;
     message = "Validation Error";
     errorDetails = err.issues.map((issue) => ({
-      path: issue.path[issue.path.length - 1] ?? "",
+      path: String (issue.path[issue.path.length - 1] ?? ""),
       message: issue.message,
     }));
   }

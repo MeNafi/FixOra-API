@@ -1,7 +1,7 @@
 # End-to-End Testing Guide
 
 A single walkthrough that exercises the whole booking and payment lifecycle.
-Import `FixItNow.postman_collection.json` into Postman first — login requests store the access
+Import `FixOra-API.postman_collection.json` into Postman first — login requests store the access
 token automatically, so you never have to copy it by hand.
 
 ---
