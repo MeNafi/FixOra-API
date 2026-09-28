@@ -17,7 +17,7 @@ A modern backend RESTful API powering a home services marketplace where customer
 [![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
 [![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io/)
 
-</div>
+</div> 
 
 ---
 
