@@ -19,7 +19,7 @@ A modern backend RESTful API powering a home services marketplace where customer
 
 </div> 
 
----
+--- 
 
 ## 🛠️ Tech Stack Architecture
 
