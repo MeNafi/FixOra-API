@@ -12,7 +12,7 @@ const app: Application = express();
 app.use(cors({
     origin: config.app_url,
     credentials: true
-}))
+})) 
 
 // Stripe webhook needs the RAW body to verify the signature,
 // so it is registered BEFORE express.json() parses anything.
