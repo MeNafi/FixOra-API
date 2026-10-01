@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://fixora-client.vercel.app">
-    <img src="https://i.ibb.co.com/CxnFkxc/fixora-logo-no-bg-removebg-preview.png" alt="FixOra Logo" width="280" />
+    <img src="https://i.ibb.co.com/CxnFkxc/fixora-logo-no-bg-removebg-preview.png" alt="FixOra Logo" width="250" />
   </a>
   
 #
@@ -271,13 +271,34 @@ Handled cases include Zod validation errors, JWT errors (invalid/expired), Prism
 
 ---
 
-## 💳 Payment Flow
+# 💳 Payment Flow
 
-1. Customer books a service → booking is `REQUESTED`.
-2. Technician accepts → booking is `ACCEPTED`.
-3. Customer calls `POST /api/payments/create` → the API creates a **Stripe Checkout Session** and returns `paymentUrl`.
-4. Customer completes payment on Stripe's hosted page.
-5. Stripe calls `POST /api/payments/webhook` (signature verified with `STRIPE_WEBHOOK_SECRET`) → the payment is marked `COMPLETED` and the booking becomes `PAID`.
-6. As a fallback, the success redirect can call `POST /api/payments/confirm`, which retrieves the session from Stripe and verifies `payment_status === "paid"` before updating anything. Both paths are idempotent.
+| Step | Process & Action |
+| :--- | :--- |
+| **1. Booking Initiated** | Customer books a service → booking status is set to `REQUESTED`. |
+| **2. Technician Acceptance** | Technician accepts the request → booking status updates to `ACCEPTED`. |
+| **3. Checkout Created** | Customer calls `POST /api/payments/create` → API generates a **Stripe Checkout Session** and returns `paymentUrl`. |
+| **4. Stripe Processing** | Customer completes payment securely on Stripe's hosted page. |
+| **5. Webhook Verification** | Stripe calls `POST /api/payments/webhook` (verified via `STRIPE_WEBHOOK_SECRET`) → payment is marked `COMPLETED` and booking becomes `PAID`. |
+| **6. Fallback Mechanism** | Success redirect calls `POST /api/payments/confirm`, verifying `payment_status === "paid"` with Stripe before updating state. *(Both paths are idempotent)*. |
+| 🔒 **Security Guarantee** | Payments are **never** marked paid based on client input alone — state source of truth is strictly verified via Stripe. |
 
-Payments are never marked paid based on client input alone — the state always comes from Stripe.
+---
+
+## 📄 License
+
+This project is a private project developed for the FixOra home service marketplace.
+
+**© FixOra — All Rights Reserved**
+
+<div align="center">
+
+<a href="https://fixora-client.vercel.app">
+    <img src="https://i.ibb.co.com/CxnFkxc/fixora-logo-no-bg-removebg-preview.png" alt="FixOra Logo" width="240" />
+  </a>
+
+**Connecting Customers with Trusted Home Service Professionals**
+
+Built with ❤️ using **Express.js & Node.js**
+
+</div>
