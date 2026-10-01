@@ -1,7 +1,10 @@
 <div align="center">
 
-# FixOra-API 🔧
-
+<a href="https://fixora-client.vercel.app">
+    <img src="https://i.ibb.co.com/CxnFkxc/fixora-logo-no-bg-removebg-preview.png" alt="FixOra Logo" width="280" />
+  </a>
+  
+#
 **Your Trusted Home Service Platform**
 
 A modern backend RESTful API powering a home services marketplace where customers can seamlessly browse services, book skilled technicians, process secure Stripe payments, and post verified reviews.
